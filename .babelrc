@@ -13,6 +13,9 @@
   "plugins": [
     "syntax-dynamic-import",
     "transform-object-rest-spread",
-    ["transform-class-properties", { "spec": true }]
+    ["transform-class-properties", { "spec": true }],
+    ['wildcard', {
+      'exts': ["js", "es6", "es", "jsx", "javascript"]
+    }]
   ]
 }

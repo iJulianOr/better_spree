@@ -6,5 +6,5 @@
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
-
-console.log('Hello World from Webpacker')
+import App from '../components/app.vue'
+import spree_base_frontend from '~spree_base_frontend/app/javascript/packs/index.js'

@@ -4,6 +4,9 @@
 <!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
 <!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+
+  <%= javascript_pack_tag 'application' %>
+
   <head data-hook="inside_head">
     <%= render partial: 'spree/shared/head' %>
   </head>

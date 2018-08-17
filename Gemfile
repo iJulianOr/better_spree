@@ -74,9 +74,9 @@ group :development do
 end
 
 # Spree Core
-gem 'spree', github: 'spree/spree'
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
-gem 'spree_gateway', github: 'spree/spree_gateway'
+gem 'spree', '~> 3.6.3'
+gem 'spree_auth_devise', '~> 3.3'
+gem 'spree_gateway', '~> 3.3'
 
 # Spree-contrib extensions
 gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
@@ -84,3 +84,5 @@ gem 'spree_recently_viewed', github: 'spree-contrib/spree_recently_viewed'
 gem 'spree_product_assembly', github: 'spree-contrib/spree-product-assembly'
 gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
 gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
+
+gem 'spree_base_frontend', path: '../spree_base_frontend'
