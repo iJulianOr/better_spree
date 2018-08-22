@@ -63,7 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Custom gems
 
-gem 'webpacker'
+gem 'webpacker', '>= 4.0.x'
 gem 'foreman'
 
 group :development do
