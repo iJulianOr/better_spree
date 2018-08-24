@@ -1,0 +1,49 @@
+console.log('[Service Worker] Hello world!');
+
+var CACHE_NAME = 'v1-cached-assets'
+
+function onInstall(event) {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(function prefill(cache) {
+      return cache.addAll([
+        '/offline.html',
+        '<%= Webpacker.manifest.lookup("application.js") %>',
+      ]);
+    })
+  );
+}
+
+function onActivate(event) {
+  console.log('[Serviceworker]', "Activating!", event);
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.filter(function(cacheName) {
+          // Return true if you want to remove this cache,
+          // but remember that caches are shared across
+          // the whole origin
+           return cacheName.indexOf('v1') !== 0;
+        }).map(function(cacheName) {
+          return caches.delete(cacheName);
+        })
+      );
+    })
+  );
+}
+
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    // ensure we check the *right* cache to match against
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.match(event.request).then(function (response) {
+        return response || fetch(event.request).then(function(response) {
+          cache.put(event.request, response.clone());
+          return response;
+        });
+      });
+    })
+  );
+});
+
+self.addEventListener('install', onInstall);
+self.addEventListener('activate', onActivate);

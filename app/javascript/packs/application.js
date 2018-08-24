@@ -8,3 +8,10 @@
 // layout file, like app/views/layouts/application.html.erb
 import App from '../components/app.vue'
 import spree_base_frontend from '~spree_base_frontend/app/javascript/packs/index.js'
+
+if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/sw.js', { scope: './' })
+        .then(function(reg) {
+            console.log('[Page] Service worker registered!');
+        });
+}
