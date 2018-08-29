@@ -1,13 +1,11 @@
-console.log('[Service Worker] Hello world!');
-
 var CACHE_NAME = 'v1-cached-assets'
 
 function onInstall(event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function prefill(cache) {
       return cache.addAll([
-        '/offline.html',
         '<%= Webpacker.manifest.lookup("application.js") %>',
+        '<%= Webpacker.manifest.lookup("home.js") %>',
       ]);
     })
   );
@@ -31,6 +29,9 @@ function onActivate(event) {
   );
 }
 
+self.addEventListener('install', onInstall);
+self.addEventListener('activate', onActivate);
+
 self.addEventListener('fetch', event => {
   event.respondWith(
     // ensure we check the *right* cache to match against
@@ -44,6 +45,3 @@ self.addEventListener('fetch', event => {
     })
   );
 });
-
-self.addEventListener('install', onInstall);
-self.addEventListener('activate', onActivate);
