@@ -86,4 +86,4 @@ gem 'spree_product_assembly', github: 'spree-contrib/spree-product-assembly'
 gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
 gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 
-gem 'spree_base_frontend', path: '../spree_base_frontend'
+gem 'spree_base_frontend', git: 'https://gitlab.web-experto.com.ar/spree-extensions/spree_base_frontend'
