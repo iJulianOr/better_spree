@@ -20,6 +20,8 @@
 
 ### Ruby
 
+> Para mayor información sobre el uso de Ruby, ver la [documentación de Ruby](./RUBY.md).
+
 Para validar que estén las dependencias necesarias para Webpacker, será necesario ejecutar los siguientes comandos: 
 
 ```shell
@@ -50,6 +52,8 @@ gem install bundler
 
 ### Git
 
+> Para mayor información sobre el uso de Git, ver la [documentación de Git](./GIT.md).
+
 Configuración básica de git:
 
 ```shell
@@ -66,6 +70,8 @@ cat ~/.ssh/id_rsa.pub
 
 ### Node
 
+> Para mayor información sobre el uso de Node, ver la [documentación de Node](./NODE.md).
+
 Es necesario instalar Node para manejar los paquetes de Webpack.  
 Para hacerlo, ejecutar los siguientes comandos:
 ```shell
@@ -74,6 +80,8 @@ sudo apt-get install -y nodejs
 ```
 
 ### Rails
+
+> Para mayor información sobre el uso de Rails, ver la [documentación de Rails](./RAILS.md).
 
 La instalación de Rails es igual a la de bundler (al ser ambas una gema):
 
