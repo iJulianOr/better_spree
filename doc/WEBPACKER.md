@@ -1,18 +1,18 @@
 # Índice
 
-1. [Configuración](configuracion)  
-   1. [Configuración de entorno actual](configuración-de-entorno-actual)  
-   2. [Configuración desde cero](configuración-desde-cero)
-2. [Uso](uso)
-2. [Webpack](webpack)  
-   1. [Environment](environment)  
-      1. [Plugins](plugins)  
-      2. [Configuraciones](configuraciones)  
-   2. [Development](development)  
-   3. [Production](production)
-2. [Templates](templates)  
-   1. [Archivo de configuración](archivo-de-configuración)
-   2. [Configuración de una extensión](configuración-de-una-extensión)
+1. [Configuración](#configuracion)  
+   1. [Configuración de entorno actual](#configuración-de-entorno-actual)  
+   2. [Configuración desde cero](#configuración-desde-cero)
+2. [Uso](#uso)
+2. [Webpack](#webpack)  
+   1. [Environment](#environment)  
+      1. [Plugins](#plugins)  
+      2. [Configuraciones](#configuraciones)  
+   2. [Development](#development)  
+   3. [Production](#production)
+2. [Templates](#templates)  
+   1. [Archivo de configuración](#archivo-de-configuración)
+   2. [Configuración de una extensión](#configuración-de-una-extensión)
 
 # Configuración
 
@@ -52,9 +52,9 @@ yarn upgrade
 # Uso
 
 Los conceptos básicos para utilizar Webpacker serán:  
-1. [Compilado](compilado)  
+1. [Compilado](#compilado)  
    Mismo concepto que `rails assets:precompile`  
-2. [Instalación de plugins](instalación-de-plugins)  
+2. [Instalación de plugins](#instalación-de-plugins)  
    Mismo concepto que `gem install`
 
 ## Compilado
@@ -83,7 +83,7 @@ Reemplazando :vue por cualquiera de los plugins soportados por Webpacker. Actual
 
 ## Environment
 
-Es el archivo donde se cargarán todas las configuraciones de Webpack, indiferentemente del environment en que se esté trabajando. El mismo es creado por defecto con la instalación de Webpack y ya trae las configuraciones necesarias para trabajar con Vue y Babel. Tal y como vimos en [Instalación de plugins](instalación-de-plugins), será posible agregar una serie de plugins de Webpack de manera automática con Webpacker. Para los que no sean soportados será necesario ver la sección [Plugins](plugins) a continuación.
+Es el archivo donde se cargarán todas las configuraciones de Webpack, indiferentemente del environment en que se esté trabajando. El mismo es creado por defecto con la instalación de Webpack y ya trae las configuraciones necesarias para trabajar con Vue y Babel. Tal y como vimos en [Instalación de plugins](#instalación-de-plugins), será posible agregar una serie de plugins de Webpack de manera automática con Webpacker. Para los que no sean soportados será necesario ver la sección [Plugins](#plugins) a continuación.
 
 ### Plugins
 
