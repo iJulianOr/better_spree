@@ -130,7 +130,7 @@ Dentro de la aplicación, en la carpeta /bin encontraremos un archivo llamado `w
 
 ## Webpacker
 
-> Para mayor información sobre el uso de Webpacker, ver la [documentación](./WEBPACKER.md)
+> Para mayor información sobre el uso de Webpacker, ver la [documentación de webpacker](./WEBPACKER.md).
 
 Webpacker es la gema encargada del manejo de assets dentro de la aplicación, siendo el reemplazo del asset-pipeline.  
 Ésta incluye un nuevo directorio dentro de `app/`, llamado `javacript/`, donde se guardarán los nuevos archivos de assets.  
