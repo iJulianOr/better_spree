@@ -1,18 +1,18 @@
 # Índice
 
-1. [Uso básico](uso-básico)  
-   1. [Instalación](instalación)
-      1. [Ruby](ruby)  
-      2. [Git](git)  
-      3. [Node](node)  
-      4. [Rails](rails)  
-      5. [Psql](psql)  
-   2. [Levantar la aplicación](levantar-la-aplicación)  
-2. [Dependencias básicas](dependencias-básicas)  
-   1. [Foreman](foreman)  
-   2. [Webpacker](webpacker)  
-      1. [Compilado](compilado)  
-      2. [Instalación de plugins](instalación-de-plugins)  
+1. [Uso básico](#uso-básico)  
+   1. [Instalación](#instalación)
+      1. [Ruby](#ruby)  
+      2. [Git](#git)  
+      3. [Node](#node)  
+      4. [Rails](#rails)  
+      5. [Psql](#psql)  
+   2. [Levantar la aplicación](#levantar-la-aplicación)  
+2. [Dependencias básicas](#dependencias-básicas)  
+   1. [Foreman](#foreman)  
+   2. [Webpacker](#webpacker)  
+      1. [Compilado](#compilado)  
+      2. [Instalación de plugins](#instalación-de-plugins)  
 
 # Uso básico
 
