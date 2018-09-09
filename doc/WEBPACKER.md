@@ -3,6 +3,7 @@
 1. [Configuración](#configuracion)  
    1. [Configuración de entorno actual](#configuración-de-entorno-actual)  
    2. [Configuración desde cero](#configuración-desde-cero)
+      3. [Webpack 4](#webpack-4) 
 2. [Uso](#uso)
 2. [Webpack](#webpack)  
    1. [Environment](#environment)  
@@ -48,6 +49,16 @@ Para solucionar problemas de compatibilidad, correr el siguiente comando:
 ```
 yarn upgrade
 ```
+
+### Webpack 4
+
+Para utilizar Webpack 4 será necesario ejecutar el siguiente comando:
+
+```shell
+yarn add webpack --dev 
+```
+
+Y **no volver a ejectuar `rails webpacker:install`** ya que actualizará el paquete y lo volverá a la versión 3.5, siendo esta la última soportada por Webpacker actualmente.
 
 # Uso
 
