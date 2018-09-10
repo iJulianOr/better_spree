@@ -119,6 +119,16 @@ Por defecto, la instalación de Psql no crea un usuario. Para ello, será necesa
 sudo -u postgres createuser root -s
 ```
 
+### Package.json
+
+Para instalar las dependencias de Node será necesario ejecutar
+
+```bash
+yarn install
+yarn add webpack --dev 
+yarn upgrade
+```
+
 ## Levantar la aplicación
 
 Para levantar la aplicación sólo será necesario correr el comando `foreman start`
