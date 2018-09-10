@@ -127,7 +127,7 @@ Para levantar la aplicación sólo será necesario correr el comando `foreman st
 
 ## Foreman
 
-Foreman se encarga de manejar procesos dentro de archivos Procfile. En este caso, la aplicación dejará de corre **sólo** bajo el comando `rails s`, y comenzará a ser necesario también correr el comando `webpack-dev-server` (en desarrollo) o `NODE_ENV=production ./bin/webpack --watch --colors --progress` (en producción). 
+Foreman se encarga de manejar procesos dentro de archivos Procfile. En este caso, la aplicación dejará de correr **sólo** bajo el comando `rails s`, y comenzará a ser necesario también correr el comando `webpack-dev-server` (en desarrollo) o `NODE_ENV=production ./bin/webpack --watch --colors --progress` (en producción). 
 Para esto, se crea un archivo Procfile con la siguiente configuración:
 ```
 backend: bin/rails s -p 3000    
