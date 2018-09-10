@@ -16,6 +16,17 @@
 
 # Uso básico
 
+| Dependencia | Versión         |
+| ----------- | :-------------: |
+| Ruby        | 2.5.1p57        |
+| Rails       | 5.2.0           |
+| Foreman     | 0.85.0          |
+| Bundler     | 1.16.3          |
+| Webpacker   | 4.0.0.pre.pre.2 |
+| Webpack     | 4.17.2          |
+| Vue         | 2.5.17          |
+| Babel       | 5.0.0           |
+
 ## Instalación
 
 ### Ruby
@@ -107,17 +118,6 @@ sudo -u postgres createuser root -s
 ```
 
 ## Levantar la aplicación
-
-| Dependencia | Versión         |
-| ----------- | :-------------: |
-| Ruby        | 2.5.1p57        |
-| Rails       | 5.2.0           |
-| Foreman     | 0.85.0          |
-| Bundler     | 1.16.3          |
-| Webpacker   | 4.0.0.pre.pre.2 |
-| Webpack     | 4.17.2          |
-| Vue         | 2.5.17          |
-| Babel       | 5.0.0           |
 
 Para levantar la aplicación sólo será necesario correr el comando `foreman start`
 
