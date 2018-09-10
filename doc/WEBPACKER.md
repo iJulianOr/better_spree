@@ -10,11 +10,11 @@ Webpacker facilita el uso de Webpack para manejar los JavaScript en Rails. El mi
       3. [Webpack 4](#webpack-4) 
 2. [Uso](#uso)
 2. [Webpack](#webpack)  
-   1. [Environment](#environment)  
+   1. [Environment](#environmentjs)  
       1. [Plugins](#plugins)  
       2. [Configuraciones](#configuraciones)  
-   2. [Development](#development)  
-   3. [Production](#production)
+   2. [Development](#developmentjs)  
+   3. [Production](#productionjs)
 2. [Templates](#templates)  
    1. [Archivo de configuración](#archivo-de-configuración)
    2. [Configuración de una extensión](#configuración-de-una-extensión)
@@ -97,7 +97,7 @@ Reemplazando :vue por cualquiera de los plugins soportados por Webpacker. Actual
 
 # Webpack
 
-## Environment
+## environment.js
 
 Es el archivo donde se cargarán todas las configuraciones de Webpack, indiferentemente del environment en que se esté trabajando. El mismo es creado por defecto con la instalación de Webpack y ya trae las configuraciones necesarias para trabajar con Vue y Babel. Tal y como vimos en [Instalación de plugins](#instalación-de-plugins), será posible agregar una serie de plugins de Webpack de manera automática con Webpacker. Para los que no sean soportados será necesario ver la sección [Plugins](#plugins) a continuación.
 
@@ -145,7 +145,7 @@ const spreeBaseFrontend = require('./spree_base_frontend')
 environment.config.merge(spreeBaseFrontend)
 ```
 
-## Development
+## development.js
 
 Actualmente se utiliza el archivo generado por defecto por Webpacker:
 
@@ -157,7 +157,7 @@ const environment = require('./environment')
 module.exports = environment.toWebpackConfig()
 ```
 
-## Production
+## production.js
 
 Al igual que en development, se utiliza el archivo generado por defecto por Webpacker:
 
