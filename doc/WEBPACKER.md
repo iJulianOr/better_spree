@@ -60,6 +60,7 @@ Para utilizar Webpack 4 será necesario ejecutar el siguiente comando:
 
 ```shell
 yarn add webpack --dev 
+yarn upgrade
 ```
 
 Y **no volver a ejectuar `rails webpacker:install`** ya que actualizará el paquete y lo volverá a la versión 3.5, siendo esta la última soportada por Webpacker actualmente.
