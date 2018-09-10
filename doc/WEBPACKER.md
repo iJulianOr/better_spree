@@ -1,3 +1,7 @@
+# Webpacker
+
+Webpacker facilita el uso de Webpack para manejar los JavaScript en Rails. El mismo coexiste con el asset pipeline, ya que el propósito principal de Webpack es el JavaScript de las aplicaciones, no imágenes, CSS o incluso JavaScript Sprinkles; todos ellos continuan estando en app/assets.  
+
 # Índice
 
 1. [Configuración](#configuracion)  
@@ -232,7 +236,7 @@ development:
 
 Dentro del directorio `lib/generators/name_of_extension/templates` crear un archivo llamado `name_of_extension.js` que será el que se copiará a la aplicación principal al momento de la instalación:
 
-```javacript
+```javascript
 const execSync = require('child_process').execSync;  
 code = execSync('bundle show name_of_extension');
 
