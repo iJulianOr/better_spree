@@ -33,7 +33,7 @@
 
 ### Ruby
 
-> Para mayor información sobre el uso de Ruby, ver la [documentación de Ruby](./RUBY.md).
+> Para mayor información sobre el uso de Ruby, ver la [documentación de Ruby](doc/RUBY.md).
 
 Para validar que estén las dependencias necesarias para Webpacker, será necesario ejecutar los siguientes comandos: 
 
@@ -65,7 +65,7 @@ gem install bundler
 
 ### Git
 
-> Para mayor información sobre el uso de Git, ver la [documentación de Git](./GIT.md).
+> Para mayor información sobre el uso de Git, ver la [documentación de Git](doc/GIT.md).
 
 Configuración básica de git:
 
@@ -83,7 +83,7 @@ cat ~/.ssh/id_rsa.pub
 
 ### Node
 
-> Para mayor información sobre el uso de Node, ver la [documentación de Node](./NODE.md).
+> Para mayor información sobre el uso de Node, ver la [documentación de Node](doc/NODE.md).
 
 Es necesario instalar Node para manejar los paquetes de Webpack.  
 Para hacerlo, ejecutar los siguientes comandos:
@@ -94,7 +94,7 @@ sudo apt-get install -y nodejs
 
 ### Rails
 
-> Para mayor información sobre el uso de Rails, ver la [documentación de Rails](./RAILS.md).
+> Para mayor información sobre el uso de Rails, ver la [documentación de Rails](doc/RAILS.md).
 
 La instalación de Rails es igual a la de bundler (al ser ambas una gema):
 
@@ -140,7 +140,7 @@ Dentro de la aplicación, en la carpeta /bin encontraremos un archivo llamado `w
 
 ## Webpacker
 
-> Para mayor información sobre el uso de Webpacker, ver la [documentación de webpacker](./WEBPACKER.md).
+> Para mayor información sobre el uso de Webpacker, ver la [documentación de webpacker](doc/WEBPACKER.md).
 
 Webpacker es la gema encargada del manejo de assets dentro de la aplicación, siendo el reemplazo del asset pipeline en todo lo referente a JavaScript.  
 Ésta incluye un nuevo directorio dentro de `app/`, llamado `javacript/`, donde se guardarán los nuevos archivos de assets.  
