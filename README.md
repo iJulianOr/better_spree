@@ -4,12 +4,16 @@
 
 1. [Uso básico](#uso-básico)  
    1. [Instalación](#instalación)
-      1. [Ruby](#ruby)  
-      2. [Git](#git)  
-      3. [Node](#node)  
-      4. [Rails](#rails)  
-      5. [Psql](#psql)  
+      1. [Con Docker](#con-docker)
+         1. [Ruby](#ruby)  
+         2. [Git](#git)  
+         3. [Node](#node)  
+         4. [Rails](#rails)  
+         5. [Psql](#psql)  
+      2. [Sin Docker](#sin-docker)
    2. [Levantar la aplicación](#levantar-la-aplicación)  
+      1. [Iniciar con Docker](#iniciar-con-docker)
+      1. [Iniciar sin Docker](#iniciar-sin-docker)
 2. [Dependencias básicas](#dependencias-básicas)  
    1. [Foreman](#foreman)  
    2. [Webpacker](#webpacker)  
@@ -19,6 +23,41 @@
 # Uso básico
 
 ## Instalación
+
+Lo primero será clonar el repositorio en el directorio de preferencia 
+
+```shell
+git clone git@gitlab.web-experto.com.ar:spree/spree_base.git
+```
+
+### Con Docker
+
+> Requisitos: Tener instalado Docker. Seguir el tutorial de la página de docker (https://docs.docker.com/engine/installation/). Instalar Docker-compose (https://docs.docker.com/compose/install/).
+
+| Dependencia    | Versión         |
+| -----------    | :-------------: |
+| Docker         | 17.12.1-ce      |
+| Docker-compose | 1.21.2          |
+
+Buildear el proyecto
+
+```shell
+docker-compose -f <entorno>.yml build
+```
+
+Crear la base de datos
+
+```shell
+docker-compose -f <entorno>.yml run --rm web rails db:create db:migrate db:seed spree_sample:load
+```
+
+Levantar el proyecto
+
+```shell
+docker-compose -f <entorno>.yml up
+```
+
+### Sin Docker
 
 | Dependencia | Versión         |
 | ----------- | :-------------: |
@@ -31,7 +70,7 @@
 | Vue         | 2.5.17          |
 | Babel       | 5.0.0           |
 
-### Ruby
+#### Ruby
 
 > Para mayor información sobre el uso de Ruby, ver la [documentación de Ruby](doc/RUBY.md).
 
@@ -63,7 +102,7 @@ Instalación de bundler (gema para manejar versiones dentro de aplicaciones de R
 gem install bundler
 ```
 
-### Git
+#### Git
 
 > Para mayor información sobre el uso de Git, ver la [documentación de Git](doc/GIT.md).
 
@@ -81,7 +120,7 @@ Agregar la key generada previamente al perfil de Gitlab en https://gitlab.web-ex
 cat ~/.ssh/id_rsa.pub
 ```
 
-### Node
+#### Node
 
 > Para mayor información sobre el uso de Node, ver la [documentación de Node](doc/NODE.md).
 
@@ -92,7 +131,7 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-### Rails
+#### Rails
 
 > Para mayor información sobre el uso de Rails, ver la [documentación de Rails](doc/RAILS.md).
 
@@ -102,7 +141,7 @@ La instalación de Rails es igual a la de bundler (al ser ambas una gema):
 gem install rails -v 5.2.0
 ```
 
-### Psql
+#### Psql
 
 La base de datos a utilizar estará hecha bajo Psql. Para su instalación, ejecutar los siguientes comandos en la terminal:
 
