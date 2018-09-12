@@ -18,4 +18,7 @@ WORKDIR $APP_HOME
 ADD Gemfile* $APP_HOME/
 RUN bundle install
 
+ADD package* $APP_HOME/
+RUN yarn install
+
 ADD . $APP_HOME
