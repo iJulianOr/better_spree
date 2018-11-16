@@ -19,6 +19,9 @@ ADD Gemfile* $APP_HOME/
 RUN bundle install
 
 ADD package* $APP_HOME/
+
 RUN yarn install
+RUN yarn upgrade
+RUN yarn add @rails/webpacker@next
 
 ADD . $APP_HOME

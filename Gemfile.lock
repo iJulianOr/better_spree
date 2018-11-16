@@ -40,8 +40,8 @@ GIT
       spree_extension
 
 GIT
-  remote: https://gitlab.web-experto.com.ar/spree-extensions/spree_base_frontend
-  revision: c8118ef813c86959d856898dce20c8322e459e87
+  remote: https://gitlab.web-experto.com.ar/spree-extensions/spree_base_frontend.git
+  revision: 143eda1bd5accf0dfa0a3be678059bec5a33e38d
   specs:
     spree_base_frontend (0.0.1.alpha)
       spree_backend (>= 3.1.0, < 4.0)
@@ -488,4 +488,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.3
+   1.16.4

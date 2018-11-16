@@ -1,4 +1,6 @@
 var CACHE_NAME = 'v1-cached-assets'
+self.addEventListener('install', onInstall);
+self.addEventListener('activate', onActivate);
 
 function onInstall(event) {
   event.waitUntil(
@@ -28,9 +30,6 @@ function onActivate(event) {
     })
   );
 }
-
-self.addEventListener('install', onInstall);
-self.addEventListener('activate', onActivate);
 
 self.addEventListener('fetch', event => {
   event.respondWith(

@@ -68,7 +68,7 @@ gem 'foreman'
 gem 'serviceworker-rails'
 
 group :development do
-  gem 'rack-mini-profiler'
+  gem 'rack-mini-profiler', require: false
   gem 'flamegraph'
   gem 'stackprof' # ruby 2.1+ only
   gem 'memory_profiler'
@@ -86,4 +86,4 @@ gem 'spree_product_assembly', github: 'spree-contrib/spree-product-assembly'
 gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
 gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 
-gem 'spree_base_frontend', git: 'https://gitlab.web-experto.com.ar/spree-extensions/spree_base_frontend'
+gem 'spree_base_frontend', git: 'https://gitlab.web-experto.com.ar/spree-extensions/spree_base_frontend.git'
