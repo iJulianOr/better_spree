@@ -12,9 +12,10 @@ services:
     build: .
     env_file:
       - '.env'
-    command: ./bin/webpack-dev-server --inline true
+    command: script/start_webpacker.sh
     volumes:
       - '.:/app'
+      - gems:/bundle
     ports:
       - '3035:3035'
 
@@ -27,13 +28,20 @@ services:
     stdin_open: true
     ports:
       - '3000:3000'
-    command: puma -C config/puma.rb
+    command: script/start.sh
     volumes:
       - '.:/app'
+      - gems:/bundle
     env_file:
       - '.env'
+
+  bundle:
+    image: busybox
+    volumes:
+      - gems:/bundle
 
 volumes:
   redis:
   postgres:
   webpack:
+  gems:

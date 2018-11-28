@@ -16,7 +16,6 @@ RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
 ADD Gemfile* $APP_HOME/
-RUN bundle install
 
 ADD package* $APP_HOME/
 
@@ -25,3 +24,5 @@ RUN yarn upgrade
 RUN yarn add @rails/webpacker@next
 
 ADD . $APP_HOME
+
+ENV BUNDLE_PATH /bundle
