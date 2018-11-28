@@ -61,12 +61,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Custom gems
-
-gem 'webpacker', '>= 4.0.x'
-gem 'foreman'
-gem 'serviceworker-rails'
-
 group :development do
   gem 'rack-mini-profiler', require: false
   gem 'flamegraph'
@@ -74,16 +68,20 @@ group :development do
   gem 'memory_profiler'
 end
 
+# Custom gems
+gem 'serviceworker-rails'
+gem 'webpacker', '>= 4.0.x'
+
 # Spree Core
-gem 'spree', '~> 3.6.3'
+gem 'spree', '~> 3.6.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 
 # Spree-contrib extensions
-gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
-gem 'spree_recently_viewed', github: 'spree-contrib/spree_recently_viewed'
 gem 'spree_product_assembly', github: 'spree-contrib/spree-product-assembly'
-gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
+gem 'spree_recently_viewed', github: 'spree-contrib/spree_recently_viewed'
+gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
 gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
+gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
 
 gem 'spree_base_frontend', git: 'https://gitlab.web-experto.com.ar/spree-extensions/spree_base_frontend.git'
