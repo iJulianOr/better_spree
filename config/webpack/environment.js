@@ -5,6 +5,9 @@ const vue =  require('./loaders/vue')
 
 const webpack = require('webpack')
 
+const spreeBaseFrontend = require('./spree_base_frontend')
+environment.config.merge(spreeBaseFrontend)
+
 environment.plugins.append(
   'CommonsChunkVendor',
   new webpack.optimize.SplitChunksPlugin({
@@ -37,8 +40,6 @@ environment.config.merge({
 //    })
 //)
 
-const spreeBaseFrontend = require('./spree_base_frontend')
-environment.config.merge(spreeBaseFrontend)
 
 environment.plugins.append('VueLoaderPlugin', new VueLoaderPlugin())
 environment.loaders.append('vue', vue)
