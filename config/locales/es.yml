@@ -1,7 +1,7 @@
 es:
   date:
     formats:
-      default: %d-%m-%Y %H:%M:%S %Z
+      default: "%d-%m-%Y %H:%M:%S %Z"
   activerecord:
     attributes:
       spree/adjustment:
