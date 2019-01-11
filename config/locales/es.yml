@@ -1240,7 +1240,7 @@ es:
     return_number:
     return_quantity: Cantidad de devolución
     returned: Devuelto
-    returns:
+    returns: Devoluciones
     review: Revisar
     rewrite_your_password: Repita su contraseña
     risk: Riesgo
