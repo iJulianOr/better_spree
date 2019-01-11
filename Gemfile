@@ -73,9 +73,9 @@ gem 'serviceworker-rails'
 gem 'webpacker', '>= 4.0.x'
 
 # Spree Core
-gem 'spree', '~> 3.6.6'
-gem 'spree_auth_devise', '~> 3.3'
-gem 'spree_gateway', '~> 3.3'
+gem 'spree', '~> 3.7.0.rc1'
+gem 'spree_auth_devise', '~> 3.4'
+gem 'spree_gateway', '~> 3.4'
 
 # Spree-contrib extensions
 gem 'spree_product_assembly', github: 'spree-contrib/spree-product-assembly'

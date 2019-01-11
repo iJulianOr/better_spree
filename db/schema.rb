@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_02_080857) do
+ActiveRecord::Schema.define(version: 2019_01_11_163860) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -157,7 +157,9 @@ ActiveRecord::Schema.define(version: 2019_01_02_080857) do
     t.integer "user_id"
     t.integer "payment_method_id"
     t.boolean "default", default: false, null: false
+    t.datetime "deleted_at"
     t.index ["address_id"], name: "index_spree_credit_cards_on_address_id"
+    t.index ["deleted_at"], name: "index_spree_credit_cards_on_deleted_at"
     t.index ["payment_method_id"], name: "index_spree_credit_cards_on_payment_method_id"
     t.index ["user_id"], name: "index_spree_credit_cards_on_user_id"
   end
@@ -448,6 +450,8 @@ ActiveRecord::Schema.define(version: 2019_01_02_080857) do
     t.decimal "amount", precision: 10, scale: 2
     t.string "currency"
     t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["deleted_at"], name: "index_spree_prices_on_deleted_at"
     t.index ["variant_id", "currency"], name: "index_spree_prices_on_variant_id_and_currency"
     t.index ["variant_id"], name: "index_spree_prices_on_variant_id"
