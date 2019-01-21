@@ -27,7 +27,7 @@
 Lo primero será clonar el repositorio en el directorio de preferencia 
 
 ```shell
-git clone git@gitlab.web-experto.com.ar:spree/spree_base.git
+git clone git@gitlab.web-experto.com.ar:spree/spree_3-6.git
 ```
 
 ### Con Docker
